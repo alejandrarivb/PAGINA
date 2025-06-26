@@ -1,0 +1,39 @@
+body{
+
+}
+
+.dynapuff-<uniquifier> {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 50;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(230, 240, 247, 1);
+  border-radius: 35px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  font-family: DynaPuff;
+  text-decoration: none;
+  transition: transform 0.3s ease; 
+}
+
+li a:hover {
+  color: #78DCFF;
+  transform: scale(1.1);
+}
