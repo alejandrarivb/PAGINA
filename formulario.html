@@ -1,0 +1,29 @@
+<h1>Contáctanos o Cotiza tu Proyecto</h1>
+
+<form action="/registro" method="POST">
+  <label for="nombre">Nombre completo:</label><br>
+  <input type="text" id="nombre" name="nombre" required><br><br>
+
+  <label for="email">Correo electrónico:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="servicio">Tipo de servicio:</label><br>
+  <select id="servicio" name="servicio" required>
+    <option value="publicidad">Publicidad para redes</option>
+    <option value="animacion">Animación / Motion Graphics</option>
+    <option value="edicion">Edición de Video</option>
+    <option value="modelado">Modelado 3D</option>
+  </select><br><br>
+
+  <label for="descripcion">Descripción del proyecto:</label><br>
+  <textarea id="descripcion" name="descripcion" required></textarea><br><br>
+
+  <label for="presupuesto">Presupuesto aproximado (opcional):</label><br>
+  <input type="text" id="presupuesto" name="presupuesto"><br><br>
+
+  <label for="fecha">Fecha estimada de entrega (opcional):</label><br>
+  <input type="date" id="fecha" name="fecha"><br><br>
+
+  <button type="submit" name="accion" value="contacto">Contacto</button>
+  <button type="submit" name="accion" value="cotizar">Cotizar</button>
+</form>
