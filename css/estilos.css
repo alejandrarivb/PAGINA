@@ -1,5 +1,9 @@
 body{
+background-color: #2560A9 !important; 
+}
 
+html {
+  scroll-behavior: smooth;
 }
 
 .dynapuff-<uniquifier> {
@@ -11,20 +15,42 @@ body{
     "wdth" 50;
 }
 
-ul {
+@media (max-width: 768px) {
+  .logo {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
+    margin-bottom: 10px; /* espacio debajo del logo si quieres */
+  }
+
+  .logo {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.inicio{
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.menu{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(230, 240, 247, 1);
+  background-color: rgba(230, 240, 247, 0.9);
   border-radius: 35px;
 }
 
-li {
+.menu li {
   float: left;
 }
 
-li a {
+.menu li a {
   display: block;
   color: black;
   padding: 14px 16px;
@@ -33,7 +59,31 @@ li a {
   transition: transform 0.3s ease; 
 }
 
-li a:hover {
-  color: #78DCFF;
+.menu li a:hover {
+  color: #5491B3;
   transform: scale(1.1);
+}
+
+.presentacion{
+  background-color: #ffffff;
+  color: #2560A9;
+}
+
+.presentacion {
+  margin: 20px auto;
+  padding: 1px;
+  background-color: #f1f1f1;
+  border-radius: 25px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2560A9;
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .presentacion{
+    width: 90%;
+  }
 }
