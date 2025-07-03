@@ -1,11 +1,12 @@
 body {
   background-image: url("../assets/img/fondopagina.webp") !important;
   background-repeat: repeat;
-  background-size: 100% auto;
+  background-size: 100%;
   background-position: top center;
   background-attachment: scroll;
   margin: 0;
   padding: 0;
+}
 
   .dynapuff-<uniquifier> {
     font-family: "DynaPuff", system-ui;
@@ -27,6 +28,7 @@ body {
     backdrop-filter: blur(10px);
     margin: 0 auto;
     transition: all 0.3s ease-in-out;
+    padding-bottom: 5px;
   }
 
   .logo {
@@ -47,7 +49,6 @@ body {
     background-color: rgb(255, 255, 255, 0.9);
     border-radius: 40px;
     padding: 10px 20px;
-    margin: 10px 0;
     gap: 20px;
   }
 
@@ -58,6 +59,7 @@ body {
     font-family: 'DynaPuff', cursive;
     text-decoration: none;
     transition: transform 0.3s ease;
+    margin-left: 12px;
   }
 
   .menu li a:hover {
@@ -88,29 +90,33 @@ body {
 
   #inicio {
     margin-top: 40px;
+    
   }
 
   .presentacion {
-    background-color: #f1f1f1;
+    background-color:rgb(48, 48, 48, 0.8);
     border-radius: 70px 20px 70px 20px;
     font-size: 20px;
     font-family: Glory;
     font-weight: bold;
-    color: #2560A9;
+    color: #78DCFF;
     margin-left: 25px;
     text-align: center;
+    box-shadow: 5px 5px 10px rgba(120,220, 255, 0.5);
   }
 
   .presentacion2 {
+    font-family: Glory;
     margin: 20px auto;
     padding-top: 1px;
-    background-color: #f1f1f1;
+    background-color:rgb(48, 48, 48, 0.8);
     border-radius: 25px 10px;
     font-size: 20px;
     font-weight: bold;
-    color: #2560A9;
+    color: #78DCFF;
     text-align: center;
     width: 50%;
+    box-shadow: 5px 5px 10px rgba(120,220, 255, 0.5);
   }
 
   @media (max-width: 768px) {
@@ -153,3 +159,161 @@ body {
     padding-top: 10px;
     padding-bottom: 20px;
   }
+
+.gallery-item img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-video {
+  padding: 40px 20px;
+
+  text-align: center;
+}
+
+.container-video {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  outline: none;
+}
+
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #2560A9;
+    background-color:rgb(37, 96, 169, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  }
+
+  form label {
+    display: block;
+    font-family: Glory;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #303030; opacity: 60%;
+    color: #ffffff;
+  }
+
+  form textarea {
+    resize: vertical;
+  }
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.form-buttons button {
+  font-family: Glory;
+  font-weight: bold;
+  padding: 12px 24px; /* Botón más compacto */
+  width: 120px; /* Ajusta según prefieras */
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #2560A9, #303030);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+  .form-buttons button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(48, 48, 48, 0.4);
+    font-family: Glory;
+  }
+
+  h4{
+    font-family: DynaPuff;
+    font-size: 40px !important;
+    text-align: center;
+    color: #78DCFF !important;
+    margin-top: 80px !important;
+  }
+
+  h5{
+    font-family: DynaPuff;
+    font-size: 40px !important;
+    text-align: center;
+    color: #fff !important;
+    margin-top: 20px !important;
+  }
+
+
+
+  .footer {
+  background-color: #121212;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+  font-family: 'Glory', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-icon img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.footer-icon:hover img {
+  transform: scale(1.1);
+}
+
+.footer-email {
+  font-size: 16px;
+  margin: 0;
+  user-select: text;
+}
+
+.footer-link {
+  color: #58aaff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #80caff;
+}
