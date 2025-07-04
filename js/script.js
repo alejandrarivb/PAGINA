@@ -12,8 +12,9 @@ $('a[href^="#"]').click(function(e) {
   var destino = $(this).attr('href');
   $('html, body').animate({
     scrollTop: $(destino).offset().top - 200
-  }, 1000);
+  }, 1500);
 });
+
 
 
 
