@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+  </style>
+  <title>artbyale</title>
+</head>
+
+<body>
+
+<body>
+  <header class="sticky-top menufijo">
+    <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <a class="logo" href="#form">
+          <img src="assets/logo/LOGO_ARTBYALE.webp" alt="Logo" width="50" height="50" class="me-2">
+        </a>
+        <ul class="navbar-nav flex-row gap-0 menu">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="index.html">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="index.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="formulario.html">Contacto/ Cotizaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="carrito.html">Comprar ahora</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<div id="form" class="container my-5 text-center">
+  <h4 class="fw-bold fs-1 fs-md-3">Contáctame o Cotiza tu Proyecto</h4>
+</div>
+
+
+<section class="form-container">
+  <form action="/registro" method="POST">
+    <h5>Formulario de Servicio</h5>
+
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="servicio">Tipo de servicio:</label>
+    <select id="servicio" name="servicio" required>
+      <option value="publicidad">Publicidad para redes</option>
+      <option value="animacion">Animación / Motion Graphics</option>
+      <option value="edicion">Edición de Video</option>
+      <option value="modelado">Modelado 3D</option>
+    </select>
+
+    <label for="descripcion">Descripción del proyecto:</label>
+    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+    <label for="presupuesto">Presupuesto aproximado (opcional):</label>
+    <input type="text" id="presupuesto" name="presupuesto">
+
+    <label for="fecha">Fecha estimada de entrega (opcional):</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <div class="form-buttons">
+      <button type="submit" name="accion" value="contacto">Contacto</button>
+      <button type="submit" name="accion" value="cotizar">Cotizar</button>
+    </div>
+  </form>
+</section>
+
+<footer class="footer bg-black text-white py-4">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 text-center">
+
+              <img class="adobe img-fluid mb-3" src="assets/img/iconosadobe.webp" alt="iconos">
+
+              <div class="mb-3">
+                <a href="https://www.instagram.com/artbyale.4/" target="_blank" class="footer-icon d-inline-block"
+                  title="Instagram">
+                  <img src="assets/img/ig.webp" alt="Instagram">
+                </a>
+              </div>
+
+              <p class="footer-email mb-2">✉️ alejandrariverab26@gmail.com</p>
+
+              <a href="https://cults3d.com/es/usuarios/artbyale/insignias" target="_blank">
+                Ver mis diseños en Cults3D
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

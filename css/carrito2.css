@@ -1,0 +1,188 @@
+body {
+  background-image: url("../assets/img/fondopagina.webp") !important;
+  background-repeat: repeat;
+  background-size: 100%;
+  background-position: top center;
+  background-attachment: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+.dynapuff-uniquifier {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 50;
+}
+
+.glory-uniquifier {
+  font-family: "Glory", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+h1 {
+  font-family: DynaPuff;
+  font-size: 50px !important;
+  text-align: center;
+  color: #78DCFF !important;
+  margin-top: 90px !important;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  text-shadow: 3px 3px 5px black;
+}
+
+/* Estilo base de la tabla */
+table {
+  font-family: Glory;
+  margin: 20px auto;
+  padding-top: 1px;
+  background-color: rgba(48, 48, 48, 0.8);
+  border-radius: 25px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  width: 60%;
+  box-shadow: 5px 5px 10px rgba(120, 220, 255, 0.5);
+
+  /* Añadido para separación entre filas */
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+/* Estilo para las celdas */
+th,
+td {
+  padding: 0.8rem 1rem;
+  text-align: center;
+}
+
+/* Contenedor responsive */
+.table-container {
+  padding: 0 1rem; /* añade espacio lateral en móviles */
+  overflow-x: auto;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  table {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+}
+
+img {
+  width: 60px;
+  height: auto;
+}
+
+.acciones {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+button {
+  font-family: Glory;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 12px 24px;
+  margin: 0.3rem;
+  background-color: #2264A6;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(37, 96, 169, 0.9);
+  font-family: Glory;
+}
+
+@media (max-width: 768px) {
+  button {
+    font-size: 16px;
+    padding: 10px 18px;
+    border-radius: 20px;
+  }
+}
+
+
+.vaciar {
+  background-color: #2264A6;
+}
+
+
+.comprar {
+  background-color: #2264A6;
+}
+
+.total {
+  font-family: Glory;
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.footer {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-icon img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.footer-icon:hover img {
+  transform: scale(1.1);
+}
+
+.footer-email {
+  font-size: 16px;
+  margin: 0;
+  user-select: text;
+}
+
+.footer-link {
+  color: #58aaff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #80caff;
+}
+
+.adobe {
+  width: 40%;
+}
+
+.ver-carrito{
+  margin-right: 30px !important;
+}

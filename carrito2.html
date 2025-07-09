@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/carrito2.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+  </style>
+    <title>Carrito de Compras</title>
+
+</head>
+
+<body>
+    <div id="form" class="container my-5 text-center">
+  <h1 class="fw-bold fs-1 fs-md-3">Tu carrito</h1>
+</div>
+    <div class="acciones">
+        <button class="vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+        <button class="comprar" onclick="comprar()">Comprar</button>
+        <!-- <a href="index.html">Productos</a> -->
+        <button onclick="location.href='index.html'">← Volver a la tienda</button>
+    </div>
+
+    <div class="container my-5 px-3">
+  <div class="table-responsive">
+    <table id="tabla-carrito" class="table table-bordered text-center align-middle">
+      <thead class="table-light">
+        <tr>
+          <th>Servicio</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Precio total</th>
+          <th>Actualizar</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+
+    <div class="total" id="total-final">Total a pagar: $0</div>
+
+     <!-- Footer -->
+    <footer class="footer bg-black text-white py-4">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 text-center">
+
+              <img class="adobe img-fluid mb-3" src="assets/img/iconosadobe.webp" alt="iconos">
+
+              <div class="mb-3">
+                <a href="https://www.instagram.com/artbyale.4/" target="_blank" class="footer-icon d-inline-block" title="Instagram">
+                  <img src="assets/img/ig.webp" alt="Instagram">
+                </a>
+              </div>
+
+              <p class="footer-email mb-2">✉️ alejandrariverab26@gmail.com</p>
+
+              <a href="https://cults3d.com/es/usuarios/artbyale/insignias" target="_blank" class="footer-link">
+                Ver mis diseños en Cults3D
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/carrito2.js"></script>
+</body>
+
+</html>
